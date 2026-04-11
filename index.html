@@ -807,7 +807,7 @@
   // For now, this polls a simple endpoint and shows the banner when live.
     async function checkLive() {
     try {
-      const res = await fetch("https://twitch-live.YOUR-SUBDOMAIN.workers.dev");
+      const res = await fetch("https://twitch-live.xotis.workers.dev/");
       const data = await res.json();
       if (data.live) {
         document.getElementById("liveBanner").classList.add("visible");
