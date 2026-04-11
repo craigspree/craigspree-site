@@ -766,7 +766,7 @@
     <a href="https://facebook.com/craigspree" target="_blank" rel="noopener">Facebook</a>
     <a href="http://spreeandadb.com" target="_blank" rel="noopener">Spree &amp; ADB Archive</a>
   </div>
-  <p class="footer-copy">&copy; 2026 DJ Spree &nbsp;&bull;&nbsp; Minneapolis, MN</p>
+  <p class="footer-copy"><span id="copyright">&copy; <span id="copy-year"></span> DJ Spree &nbsp;&bull;&nbsp; Minneapolis, MN</span></p>
 </footer>
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
@@ -817,6 +817,10 @@
   }
   checkLive();
   setInterval(checkLive, 180000);
+</script>
+
+<script>
+  document.getElementById("copy-year").textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
